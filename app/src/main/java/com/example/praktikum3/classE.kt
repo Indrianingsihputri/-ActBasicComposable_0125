@@ -1,8 +1,10 @@
 package com.example.praktikum3
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -13,15 +15,20 @@ import org.w3c.dom.Text
 
 @Composable
 fun ContohColumn(modifier : Modifier) {
-    Column (modifier = modifier.padding(top =  30.dp, start = 10.dp)){
-        Text(text = "Hello")
-        Text(text = "World")
+    Column (modifier = modifier.padding(top =  20.dp, start = 20.dp, end = 20.dp)){
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
     }
 }
 
 @Composable
 fun ContohRow(modifier : Modifier) {
-    Row(modifier = modifier.padding(start = 10.dp).background(color = Color.White)) {
-        val univ =
+    Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
     }
 }

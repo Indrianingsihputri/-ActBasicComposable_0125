@@ -1,4 +1,5 @@
 package com.example.praktikum3
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -128,7 +129,7 @@ fun TataletakBoxColumnRow(modifier : Modifier) {
                 .fillMaxWidth(),
             contentAlignment = Alignment.Center
         ){
-            image(painter = gambar,
+            Image(painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit)
             Text(text = "My Music",
@@ -137,7 +138,7 @@ fun TataletakBoxColumnRow(modifier : Modifier) {
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
                 modifier = Modifier.align(
-                    Alignment = Alignment.Center))
+                    alignment = Alignment.Center))
         }
     }
 }

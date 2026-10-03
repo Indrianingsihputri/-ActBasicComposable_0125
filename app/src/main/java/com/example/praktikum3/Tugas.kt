@@ -47,16 +47,15 @@ fun Tugas(modifier: Modifier) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color.White)
-                .padding(20.dp),
+                .padding(top = 25.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
 
             //Judul
             Text(text = "UNIVERSITAS MUHAMMADIYAH YOGYAKARTA",
-                fontSize = 24.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Blue
+                color = Color.Yellow
             )
 
             Spacer(
@@ -66,7 +65,7 @@ fun Tugas(modifier: Modifier) {
             //Keterangan
             Text(
                 text = "Teknologi Informasi",
-                fontSize = 14.sp,
+                fontSize = 16.sp,
                 color = Color.DarkGray
             )
 
@@ -119,29 +118,19 @@ fun Tugas(modifier: Modifier) {
                 modifier = Modifier.height(20.dp)
             )
 
-            //Foto Berbentuk Lingkaran
-            Box(
+            // ==========================
+            // FOTO LINGKARAN
+            // ==========================
+            Image(
+                painter = painterResource(
+                    id = R.drawable.logo
+                ),
+                contentDescription = "Foto",
                 modifier = Modifier
-                    .size(20.dp)
-                    .clip(CircleShape)
-                    .border(
-                        width = 2.dp,
-                        color = Color.LightGray,
-                        shape = CircleShape
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-                Image(
-                    painter = painterResource(
-                        id = R.drawable.logo
-                    ),
-                    contentDescription = "Foto",
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clip(CircleShape),
-                    contentScale = ContentScale.Crop
-                )
-            }
+                    .size(220.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
+            )
         }
     }
 }

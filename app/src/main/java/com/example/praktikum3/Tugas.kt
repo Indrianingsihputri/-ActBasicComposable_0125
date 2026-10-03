@@ -78,5 +78,17 @@ fun Tugas() {
         Spacer(
             modifier = Modifier.height(5.dp)
         )
+
+        //NIM
+        Text(
+            text = "20240140125",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+
+        Spacer(
+            modifier = Modifier.height(20.dp)
+        )
     }
 }

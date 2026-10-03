@@ -66,5 +66,17 @@ fun Tugas() {
         Spacer(
             modifier = Modifier.height(20.dp)
         )
+
+        //Nama
+        Text(
+            text = "Nama",
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
+
+        Spacer(
+            modifier = Modifier.height(5.dp)
+        )
     }
 }

@@ -51,7 +51,9 @@ fun Tugas(modifier: Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
 
-            //Judul
+            // ==========================
+            // JUDUL
+            // ==========================
             Text(text = "UNIVERSITAS MUHAMMADIYAH YOGYAKARTA",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
@@ -59,10 +61,12 @@ fun Tugas(modifier: Modifier) {
             )
 
             Spacer(
-                modifier = Modifier.height(4.dp)
+                modifier = Modifier.height(3.dp)
             )
 
-            //Keterangan
+            // ==========================
+            // KETERANGAN
+            // ==========================
             Text(
                 text = "Teknologi Informasi",
                 fontSize = 16.sp,
@@ -73,7 +77,9 @@ fun Tugas(modifier: Modifier) {
                 modifier = Modifier.height(25.dp)
             )
 
-            //Logo
+            // ==========================
+            // LOGO
+            // ==========================
             Image(
                 painter = painterResource(
                     id = R.drawable.kelinci
@@ -84,10 +90,12 @@ fun Tugas(modifier: Modifier) {
             )
 
             Spacer(
-                modifier = Modifier.height(20.dp)
+                modifier = Modifier.height(25.dp)
             )
 
-            //Nama
+            // ==========================
+            // NAMA
+            // ==========================
             Text(
                 text = "Nama",
                 fontSize = 14.sp,
@@ -106,7 +114,9 @@ fun Tugas(modifier: Modifier) {
                 modifier = Modifier.height(5.dp)
             )
 
-            //NIM
+            // ==========================
+            // NIM
+            // =========================
             Text(
                 text = "20240140125",
                 fontSize = 20.sp,
@@ -128,6 +138,11 @@ fun Tugas(modifier: Modifier) {
                 contentDescription = "Foto",
                 modifier = Modifier
                     .size(220.dp)
+                    .border(
+                        width = 2.dp,
+                        color = Color.Yellow,
+                        shape = CircleShape
+                    )
                     .clip(CircleShape),
                 contentScale = ContentScale.Crop
             )

@@ -22,7 +22,12 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TataletakColumn(modifier : Modifier) {
-    Column (modifier = modifier.padding(top =  20.dp, start = 20.dp, end = 20.dp)){
+    Column (
+        modifier = modifier.padding(
+            top =  20.dp,
+            start = 20.dp,
+            end = 20.dp)
+    ){
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -32,7 +37,10 @@ fun TataletakColumn(modifier : Modifier) {
 
 @Composable
 fun TataletakRow(modifier : Modifier) {
-    Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -45,7 +53,8 @@ fun TataletakBox(modifier : Modifier) {
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .fillMaxWidth(), contentAlignment = Alignment.Center
+            .fillMaxWidth(),
+        contentAlignment = Alignment.Center
     )   {
         Text(text = "Box 1")
         Text(text = "Column 1")
@@ -56,9 +65,10 @@ fun TataletakBox(modifier : Modifier) {
 
 @Composable
 fun TataletakColumnRow(modifier : Modifier) {
-    Column() {
+    Column {
         //Baris1
-        Row(modifier = modifier.fillMaxWidth(),
+        Row(
+            modifier = modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly) {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
@@ -79,13 +89,13 @@ fun TataletakColumnRow(modifier : Modifier) {
 fun TataletakRowColumn(modifier : Modifier) {
     Row(modifier = modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
         //Kolom1
-        Column() {
+        Column {
             Text(text = "Komponen1Kolom1")
             Text(text = "Komponen2Kolom1")
             Text(text = "Komponen3Kolom1")
         }
         //Kolom2
-        Column() {
+        Column {
             Text(text = "Komponen1Kolom2")
             Text(text = "Komponen2Kolom2")
             Text(text = "Komponen3Kolom2")
@@ -103,7 +113,7 @@ fun TataletakBoxColumnRow(modifier : Modifier) {
                 .fillMaxWidth(),
             contentAlignment = Alignment.Center
         ) {
-            Column() {
+            Column {
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly

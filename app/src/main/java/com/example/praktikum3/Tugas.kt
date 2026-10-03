@@ -76,6 +76,13 @@ fun Tugas() {
             text = "Nama",
             fontSize = 14.sp,
             fontWeight = FontWeight.Bold,
+            color = Color.Red
+        )
+
+        Text(
+            text = "Indrianingsih Putri",
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Bold,
             color = Color.Blue
         )
 

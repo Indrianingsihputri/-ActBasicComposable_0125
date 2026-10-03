@@ -25,103 +25,123 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun Tugas(modifier: Modifier) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.White)
-            .padding(20.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
+    Box(
+        modifier = modifier.fillMaxSize()
     ) {
 
-        //Judul
-        Text(text = "UNIVERSITAS MUHAMMADIYAH YOGYAKARTA",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Blue
-        )
-
-        Spacer(
-            modifier = Modifier.height(4.dp)
-        )
-
-        //Keterangan
-        Text(
-            text = "Teknologi Informasi",
-            fontSize = 14.sp,
-            color = Color.DarkGray
-        )
-
-        Spacer(
-            modifier = Modifier.height(25.dp)
-        )
-
-        //Logo
+        // =========================
+        // BACKGROUND
+        // =========================
         Image(
             painter = painterResource(
-                id = R.drawable.logo
+                id = R.drawable.butterfly_asthetic
             ),
-            contentDescription = "Logo",
-            modifier = Modifier.size(100.dp),
-            contentScale = ContentScale.Fit
+            contentDescription = "Background",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
         )
 
-        Spacer(
-            modifier = Modifier.height(20.dp)
-        )
-
-        //Nama
-        Text(
-            text = "Nama",
-            fontSize = 14.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Red
-        )
-
-        Text(
-            text = "Indrianingsih Putri",
-            fontSize = 16.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Blue
-        )
-
-        Spacer(
-            modifier = Modifier.height(5.dp)
-        )
-
-        //NIM
-        Text(
-            text = "20240140125",
-            fontSize = 20.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Black
-        )
-
-        Spacer(
-            modifier = Modifier.height(20.dp)
-        )
-
-        //Foto Berbentuk Lingkaran
-        Box(
+        // =========================
+        // ISI HALAMAN
+        // =========================
+        Column(
             modifier = Modifier
-                .size(20.dp)
-                .clip(CircleShape)
-                .border(
-                    width = 2.dp,
-                    color = Color.LightGray,
-                    shape = CircleShape
-                ),
-            contentAlignment = Alignment.Center
+                .fillMaxSize()
+                .background(Color.White)
+                .padding(20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
+
+            //Judul
+            Text(text = "UNIVERSITAS MUHAMMADIYAH YOGYAKARTA",
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
+            Spacer(
+                modifier = Modifier.height(4.dp)
+            )
+
+            //Keterangan
+            Text(
+                text = "Teknologi Informasi",
+                fontSize = 14.sp,
+                color = Color.DarkGray
+            )
+
+            Spacer(
+                modifier = Modifier.height(25.dp)
+            )
+
+            //Logo
             Image(
                 painter = painterResource(
-                    id = R.drawable.foto
+                    id = R.drawable.kelinci
                 ),
-                contentDescription = "Foto",
-                modifier = Modifier
-                    .fillMaxSize()
-                    .clip(CircleShape),
-                contentScale = ContentScale.Crop
+                contentDescription = "Logo",
+                modifier = Modifier.size(100.dp),
+                contentScale = ContentScale.Fit
             )
+
+            Spacer(
+                modifier = Modifier.height(20.dp)
+            )
+
+            //Nama
+            Text(
+                text = "Nama",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+
+            Text(
+                text = "Indrianingsih Putri",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
+            Spacer(
+                modifier = Modifier.height(5.dp)
+            )
+
+            //NIM
+            Text(
+                text = "20240140125",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(
+                modifier = Modifier.height(20.dp)
+            )
+
+            //Foto Berbentuk Lingkaran
+            Box(
+                modifier = Modifier
+                    .size(20.dp)
+                    .clip(CircleShape)
+                    .border(
+                        width = 2.dp,
+                        color = Color.LightGray,
+                        shape = CircleShape
+                    ),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(
+                        id = R.drawable.logo
+                    ),
+                    contentDescription = "Foto",
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(CircleShape),
+                    contentScale = ContentScale.Crop
+                )
+            }
         }
     }
 }

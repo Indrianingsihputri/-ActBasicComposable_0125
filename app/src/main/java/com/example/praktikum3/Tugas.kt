@@ -37,5 +37,16 @@ fun Tugas() {
         Spacer(
             modifier = Modifier.height(4.dp)
         )
+
+        //Keterangan
+        Text(
+            text = "Teknologi Informasi",
+            fontSize = 14.sp,
+            color = Color.DarkGray
+        )
+
+        Spacer(
+            modifier = Modifier.height(25.dp)
+        )
     }
 }
